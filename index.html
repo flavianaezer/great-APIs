@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>REST: 3 myths, 3 facts, 3 questions</title>
+
+		<meta name="description" content="A presentation explain the REST architecture style; it's constraints along with 3 myths, 3 facts and 3 questions about it">
+		<meta name="author" content="Flavia Sequeira">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+		
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>REST</h1>					
+					<h3>3 myths, 3 facts, 3 questions</h3>
+					<p>
+						<small>Created by Flavia Sequeira, Dev Engineer, ING Netherlands (<a href="http://twitter.com/flaviavanharten">@flaviavanharten</a>)</small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<p>myth 1</p><h2>REST is just HTTP</h2>		
+					</section>
+					<section>
+						<p>fact 1</p><h2>REST is HTTP done right</h2>				
+					</section>			
+				</section>
+				
+				<section>
+					<section>
+						<p>myth 2</p><h2>REST apps are not Web apps </h2>		
+					</section>
+					<section>
+						<p>fact 2</p><h2>REST is Web done right</h2>				
+					</section>			
+				</section>
+				
+				<section>
+					<p>myth 3</p><h2>REST is not SOA</h2>		
+				</section>
+				
+				<section>
+					<p>fact 3</p><h2>REST is Hypermedia done right</h2>				
+				</section>	
+				
+				<section>
+					<h2>REST is an "architectural style" </h2>
+				</section>
+				
+				<section>
+					<h2>style = nil</h2>
+				</section>
+				
+				
+				<section>
+					<section>
+						<h2>style += Client/Server</h2>
+						<ul>
+							<li>Add separation of concerns</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Advantages</h3>
+						improves UI portability <br>
+						simplifies server <br>
+						enables multiple organizational units ???
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<h2>style += Stateless</h2>
+						<ul>
+							<li>Constrain interaction to be stateless</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Advantages</h3>
+						simplifies server<br>
+						improves scalability<br>
+						improves reliability ???
+					</section>
+					<section>
+						<h3>Disadvantages</h3>
+						degrades efficiency
+					</section>					
+				</section>
+				
+				<section>
+					<section>
+						<h2>style += Caching</h2>
+						<ul>
+							<li>Add optional non-shared caching</li>
+						</ul>
+					</section>					
+					<section>
+						<h3>Advantages</h3>
+						reduces average latency ???<br>
+						improves efficiency ???<br>
+						improves scalability ???
+					</section>
+					<section>
+						<h3>Disadvantages</h3>
+						degrades reliability ???
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<h2>style += Uniform Interface</h2>
+						<ul>
+							<li>Apply generality</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Advantages</h3>
+						improves visibility<br>
+						independent evolvability<br>
+						decouples implementation
+					</section>
+					<section>
+						<h3>Disadvantages</h3>
+						degrades efficiency ???
+					</section>					
+				</section>
+				
+				<section>
+					<section>
+						<h2>style += Layered System</h2>
+						<ul>
+							<li>Apply information hiding</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Advantages</h3>
+						simplifies clients<br>
+						shared caching ???<br>						
+						improves scalability<br>
+						legacy encapsulation ???<br>
+						load balancing ???
+					</section>
+					<section>
+						<h3>Disadvantages</h3>
+						adds latency
+					</section>					
+				</section>
+				
+				<section>
+					<section>
+						<h2>style += Code on Demand</h2>
+						<ul>
+							<li>Allow code on demand (applets/js)</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Advantages</h3>
+						simplifies clients<br>
+						improves extensibility
+					</section>
+					<section>
+						<h3>Disadvantages</h3>
+						reduces visibility
+					</section>					
+				</section>
+				
+				<section>
+					<section>
+						<h2>REST Uniform Interface</h2>
+						<p>Identification of resources <br>
+						Manipulation through representations & self descriptive messages<br>
+						Hypertext as the engine of application state (HATEOAS) / Hypermedia<br>
+						</p>
+					</section>					
+				</section>
+				
+				<section>
+					<section>
+						<h2>Identification of resources</h2>
+						<p>identify business/domain/journey objects as resources<br>
+						use URLs to reach resources<br>
+						representations are transferred between client and server				
+						</p>
+					</section>					
+				</section>
+				
+				<section>
+					<section>
+						<h2>Resource manipulation</h2>
+						<p>use HTTP verbs: GET, PUT, POST, DELETE <br>
+						use HTTP status codes: 1xx, 2xx, 3xx, 4xx, 5xx <br>
+						use HTTP content negotiation: application/json, application/xml
+						</p>
+					</section>
+					<section>
+						<h3>HTTP verbs: GET, PUT, POST, DELETE</h3>
+						<table>
+							<tr>
+								<th>Resource</th>
+								<th>GET</th>
+								<th>PUT</th>
+								<th>POST</th>
+								<th>DELETE</th>
+							</tr>
+							<tr>
+								<td>Collection URL http://www.restbucks.com/orders</td>
+								<td>Return the collection of orders with possibly some of the properties of each collection item</td>
+								<td>Replace the collection with another collection</td>
+								<td>Create and add a new order to the collection</td>
+								<td>Delete the entire collection of orders</td>
+							</tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>							
+							<tr>
+								<td>Element URL http://www.restbucks.com/orders/1000</td>
+								<td>Return the order with id 1000</td>
+								<td>Replace the order with id 1000 with another order</td>
+								<td></td>
+								<td>Delete order with id 1000</td>
+							</tr>
+						</table> 
+					</section>
+					<section>
+						<h3>HTTP status codes: 1xx, 2xx, 3xx, 4xx, 5xx</h3>						
+						1xx: Informational <br><pre><code data-trim contenteditable>100 Continue</pre>
+						2xx: Successful <br><pre><code data-trim contenteditable>200 OK</pre>
+						3xx: Redirection <br><pre><code data-trim contenteditable>301: Moved Permanently</pre>
+						4xx: Client Error <br><pre><code data-trim contenteditable>400 Bad Request</pre>
+						<pre><code data-trim contenteditable>401 Unauthorized</pre>
+						<pre><code data-trim contenteditable>403 Forbidden </pre>
+						<pre><code data-trim contenteditable>404 Not Found</pre>
+						5xx: Server Error <br><pre><code data-trim contenteditable>500 Internal Server Error</pre>
+					</section>								
+				</section>
+				
+
+			<script src="lib/js/head.min.js"></script>
+            <script src="js/reveal.min.js"></script>
+			<script>
+					// Full list of configuration options available here:
+					// https://github.com/hakimel/reveal.js#configuration
+					Reveal.initialize({
+							controls: true,
+							progress: true,
+							history: true,
+							center: true,
+
+							theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+							transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+							// Parallax scrolling
+							// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+							// parallaxBackgroundSize: '2100px 900px',
+
+							// Optional libraries used to extend on reveal.js
+							dependencies: [
+									{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+									{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+									{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+									{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+									{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+									{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+							]
+					});
+			</script>
+	</body>
+</html>
