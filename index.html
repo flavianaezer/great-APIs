@@ -43,225 +43,252 @@
 						<small>Created by Flavia Sequeira, Dev Engineer, ING Netherlands (<a href="http://twitter.com/flaviavanharten">@flaviavanharten</a>)</small>
 					</p>
 				</section>
+				
+				<section>
+					<em>inspired by... salute</em>
+					<p><a href="http://www.slideshare.net/royfielding/a-little-rest-and-relaxation">A little REST and Relaxation - Roy T. Fielding</a></p>
+					<img width="600" height="450" src="./images/sleepy-cat.jpg" alt="mew mew">					
+				</section>
 
 				<section>
-					<section>
-						<p>myth 1</p><h2>REST is just HTTP</h2>		
-					</section>
-					<section>
-						<p>fact 1</p><h2>REST is HTTP done right</h2>				
-					</section>			
+					<p>myth 1</p><h2>REST apps are not Web apps </h2>		
 				</section>
-				
 				<section>
-					<section>
-						<p>myth 2</p><h2>REST apps are not Web apps </h2>		
-					</section>
-					<section>
-						<p>fact 2</p><h2>REST is Web done right</h2>				
-					</section>			
+					<p>fact 1</p><h2>REST is Web done right</h2>				
+				</section>			
+				<section>
+					<p>myth 2</p><h2>REST is just HTTP or <br>JSON over HTTP</h2>		
 				</section>
-				
+				<section>
+					<p>fact 2</p><h2>REST is HTTP done right</h2>				
+				</section>			
 				<section>
 					<p>myth 3</p><h2>REST is not SOA</h2>		
 				</section>
-				
+				<section>
+					<p>fact 3</p><em>any guesses...</em>		
+				</section>				
 				<section>
 					<p>fact 3</p><h2>REST is Hypermedia done right</h2>				
 				</section>	
 				
 				<section>
-					<h2>REST is an "architectural style" </h2>
+					<em>all facts appear... </em>
+					<h2>REST is Web done right</h2>
+					<h2>REST is HTTP done right</h2>
+					<h2>REST is Hypermedia done right</h2>
+				</section>
+
+				<section id="fragments">
+					<em>ok ...play myths & facts again...</em><br><br>
+					<h3 class="fragment current-visible">REST is not a framework</h3>
+					<h3 class="fragment current-visible">REST is not a methodology</h3>
+					<h3 class="fragment current-visible">REST is not a protocol</h3>
+					<h2 class="fragment current-visible grow">REST is an architectural style</h2>
+				</section>
+				
+				<section>
+					<em>especially for the architect inside you... </em><br><br>
+					<h3>Presenting the REST architectural style <br>and it's constraints</h3>
 				</section>
 				
 				<section>
 					<h2>style = nil</h2>
+					<p>Starting point. No constraints</p>					
 				</section>
 				
 				
 				<section>
-					<section>
-						<h2>style += Client/Server</h2>
-						<ul>
-							<li>Add separation of concerns</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Advantages</h3>
-						improves UI portability <br>
-						simplifies server <br>
-						enables multiple organizational units ???
-					</section>
+					<h2>style += Client/Server</h2>
+					<p>Add separation of concerns</p>					
+					<img width="600" height="450" src="./images/client-server.png" alt="client-server-image">
+					<p class="fragment">improves UI portability </p>
+					<p class="fragment">simplifies server </p>
+					<p class="fragment">enables multiple organizational units</p>
 				</section>
 				
 				<section>
-					<section>
-						<h2>style += Stateless</h2>
-						<ul>
-							<li>Constrain interaction to be stateless</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Advantages</h3>
-						simplifies server<br>
-						improves scalability<br>
-						improves reliability ???
-					</section>
-					<section>
-						<h3>Disadvantages</h3>
-						degrades efficiency
-					</section>					
+					<h2>style += Stateless</h2>
+					<p>Constrain interaction to be stateless</p>
+					<img width="600" height="450" src="./images/stateless.png" alt="stateless-image">
+					<p class="fragment">simplifies server</p>
+					<p class="fragment">improves scalability</p>
+					<p class="fragment">improves reliability</p>
+					<p class="fragment">degrades efficiency</p>								
 				</section>
 				
 				<section>
-					<section>
-						<h2>style += Caching</h2>
-						<ul>
-							<li>Add optional non-shared caching</li>
-						</ul>
-					</section>					
-					<section>
-						<h3>Advantages</h3>
-						reduces average latency ???<br>
-						improves efficiency ???<br>
-						improves scalability ???
-					</section>
-					<section>
-						<h3>Disadvantages</h3>
-						degrades reliability ???
-					</section>
+					<h2>style += Caching <small>(optional)</small></h2>
+					<p>Add non-shared caching</p>
+					<img width="600" height="450" src="./images/caching.png" alt="caching-image">
+					<p class="fragment">reduces average latency</p>
+					<p class="fragment">improves efficiency</p>
+					<p class="fragment">improves scalability</p>
+					<p class="fragment">degrades reliability</p>
 				</section>
 				
 				<section>
-					<section>
-						<h2>style += Uniform Interface</h2>
-						<ul>
-							<li>Apply generality</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Advantages</h3>
-						improves visibility<br>
-						independent evolvability<br>
-						decouples implementation
-					</section>
-					<section>
-						<h3>Disadvantages</h3>
-						degrades efficiency ???
-					</section>					
+					<h2>style += Uniform Interface</h2>
+					<p>Generalise</p>
+					<img width="600" height="450" src="./images/uniform-interface.png" alt="uniform-interface-image">
+					<p class="fragment">improves visibility</p>
+					<p class="fragment">independent evolution</p>
+					<p class="fragment">decouples implementation</p>
+					<p class="fragment">degrades efficiency</p>				
 				</section>
 				
 				<section>
-					<section>
-						<h2>style += Layered System</h2>
-						<ul>
-							<li>Apply information hiding</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Advantages</h3>
-						simplifies clients<br>
-						shared caching ???<br>						
-						improves scalability<br>
-						legacy encapsulation ???<br>
-						load balancing ???
-					</section>
-					<section>
-						<h3>Disadvantages</h3>
-						adds latency
-					</section>					
+					<h2>style += Layered System</h2>
+					<p>Apply information hiding</p>
+					<img width="600" height="400" src="./images/layered-arch.png" alt="layered-arch-image">
+					<p class="fragment">simplifies clients</p>
+					<p class="fragment">shared caching</p>						
+					<p class="fragment">improves scalability</p>
+					<p class="fragment">legacy encapsulation</p>
+					<p class="fragment">load balancing</p>
+					<p class="fragment">adds latency</p>			
 				</section>
 				
 				<section>
-					<section>
-						<h2>style += Code on Demand</h2>
-						<ul>
-							<li>Allow code on demand (applets/js)</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Advantages</h3>
-						simplifies clients<br>
-						improves extensibility
-					</section>
-					<section>
-						<h3>Disadvantages</h3>
-						reduces visibility
-					</section>					
+					<h2>style += Code on Demand <small>(optional)</small></h2>
+					<p>Allow code on demand (applets/js)</p>
+					<img width="600" height="450" src="./images/code-on-demand.png" alt="code-on-demand-image">
+					<p class="fragment">simplifies clients</p>
+					<p class="fragment">improves extensibility</p>
+					<p class="fragment">reduces visibility</p>
 				</section>
 				
 				<section>
-					<section>
-						<h2>REST Uniform Interface</h2>
-						<p>Identification of resources <br>
-						Manipulation through representations & self descriptive messages<br>
-						Hypertext as the engine of application state (HATEOAS) / Hypermedia<br>
-						</p>
-					</section>					
+					<em>...check if people are still awake</em>					
+				</section>
+				<section>
+					<p>style</p>
+					<h2>Uniform Interface</h2>
+					<p class="fragment">Identification of resources</p>
+					<p class="fragment">Manipulation through representations & self descriptive messages</p>
+					<p class="fragment">Hypertext as the engine of application state (HATEOAS) / Hypermedia</p>					
+				</section>					
+				<section>
+					<small>Uniform Interface</small>
+					<h2>Identification of resources</h2>
+					<p class="fragment">identify business/domain/journey objects as resources</p>
+					<p class="fragment">use URLs to reach resources; a resource can be reached via multiple URLs</p>
+					<p class="fragment">representations are transferred between client and server</p>					
+				</section>
+				<section>
+					<small>Uniform Interface</small>
+					<h2>Resource manipulation</h2>
+					<p class="fragment">use HTTP verbs: GET, PUT, POST, DELETE </p>
+					<p class="fragment">use HTTP status codes: 1xx, 2xx, 3xx, 4xx, 5xx</p>
+					<p class="fragment">use HTTP content negotiation: application/json, application/xml</p>
+				</section>
+				<section>
+					<small>Uniform Interface</small>
+					<h3>HTTP verbs: GET, PUT, POST, DELETE</h3>
+					<table>
+					<br><br>
+						<tr>
+							<th>Resource</th>
+							<th>GET</th>
+							<th>PUT</th>
+							<th>POST</th>
+							<th>DELETE</th>
+						</tr>
+						<tr>
+							<td>Collection URL<br> http://www.tb.nl/orders</td>
+							<td>Return the collection of orders with possibly some of the properties of each collection item</td>
+							<td>Replace the collection with another collection</td>
+							<td>Create and add a new order to the collection</td>
+							<td>Delete the entire collection of orders</td>
+						</tr>
+						<tr></tr>
+						<tr></tr>
+						<tr></tr>
+						<tr></tr>
+						<tr></tr>							
+						<tr>
+							<td>Element URL<br>http://www.tb.nl/orders/1000</td>
+							<td>Return the order with id 1000</td>
+							<td>Replace the order with id 1000 with another order</td>
+							<td></td>
+							<td>Delete order with id 1000</td>
+						</tr>
+					</table> 
+				</section>
+				<section>
+					<small>Uniform Interface</small>
+					<h3>HTTP status codes: 1xx, 2xx, 3xx, 4xx, 5xx</h3>						
+					1xx: Informational <br><pre><code>100 Continue</code></pre>
+					2xx: Successful <br><pre><code>200 OK</code></pre>
+					3xx: Redirection <br><pre><code>301: Moved Permanently</code></pre>
+					4xx: Client Error <br><pre><code>400 Bad Request</code></pre>
+					<pre><code>401 Unauthorized</code></pre>
+					<pre><code>403 Forbidden</code></pre>
+					<pre><code>404 Not Found</code></pre>
+					5xx: Server Error <br><pre><code>500 Internal Server Error</code></pre>
+				</section>						
+				<section>
+					<small>Uniform Interface</small>
+					<h3>HTTP content negotiation</h3>
+					return appropriate representation<br>
+					a resource can have multiple representations<br>
+					json, xml, jpeg, pdf... or something else... or all the same time
+					<br><br><br>
+					Types<br>
+					Server-driven negotiation<br>
+					Agent-driven negotiation <br>
+					Transparent negotiation			
+				</section>
+				<section>
+					<h2>Hypermedia / HATEOAS</h2>
+					<p>Hypertext as the engine of application state</p>
+					<em>...this earns REST a place among the cool guys!</em>
+					<img class="fragment" width="600" height="450" src="./images/cool-cat.jpg" alt="missing-cool-cat-image">
+				</section>
+				<section>
+					<em>wrapping up with an example...</em><br><br>
+					<em>Intent: Order pizza for me and my friend</em>
+				</section>
+				<section>
+					<img width="800" height="600" src="./images/example1.png" alt="example1-image">
+				</section>
+				<section>
+					<img width="800" height="600" src="./images/example2.png" alt="example2-image">
+				</section>
+				<section>
+					<em>two more friends just arrived...</em><br><br>
+					<em>Intent: Order pizzas for them as well</em>
 				</section>
 				
 				<section>
-					<section>
-						<h2>Identification of resources</h2>
-						<p>identify business/domain/journey objects as resources<br>
-						use URLs to reach resources<br>
-						representations are transferred between client and server				
-						</p>
-					</section>					
+					<img width="800" height="600" src="./images/example3.png" alt="example3-image">
+				</section>
+				<section>
+					<img width="800" height="600" src="./images/example4.png" alt="example4-image">
+				</section>
+				<section>
+					<em>just lost two friends ...(sob)</em>
 				</section>
 				
 				<section>
-					<section>
-						<h2>Resource manipulation</h2>
-						<p>use HTTP verbs: GET, PUT, POST, DELETE <br>
-						use HTTP status codes: 1xx, 2xx, 3xx, 4xx, 5xx <br>
-						use HTTP content negotiation: application/json, application/xml
-						</p>
-					</section>
-					<section>
-						<h3>HTTP verbs: GET, PUT, POST, DELETE</h3>
-						<table>
-							<tr>
-								<th>Resource</th>
-								<th>GET</th>
-								<th>PUT</th>
-								<th>POST</th>
-								<th>DELETE</th>
-							</tr>
-							<tr>
-								<td>Collection URL http://www.restbucks.com/orders</td>
-								<td>Return the collection of orders with possibly some of the properties of each collection item</td>
-								<td>Replace the collection with another collection</td>
-								<td>Create and add a new order to the collection</td>
-								<td>Delete the entire collection of orders</td>
-							</tr>
-							<tr></tr>
-							<tr></tr>
-							<tr></tr>
-							<tr></tr>
-							<tr></tr>							
-							<tr>
-								<td>Element URL http://www.restbucks.com/orders/1000</td>
-								<td>Return the order with id 1000</td>
-								<td>Replace the order with id 1000 with another order</td>
-								<td></td>
-								<td>Delete order with id 1000</td>
-							</tr>
-						</table> 
-					</section>
-					<section>
-						<h3>HTTP status codes: 1xx, 2xx, 3xx, 4xx, 5xx</h3>						
-						1xx: Informational <br><pre><code data-trim contenteditable>100 Continue</pre>
-						2xx: Successful <br><pre><code data-trim contenteditable>200 OK</pre>
-						3xx: Redirection <br><pre><code data-trim contenteditable>301: Moved Permanently</pre>
-						4xx: Client Error <br><pre><code data-trim contenteditable>400 Bad Request</pre>
-						<pre><code data-trim contenteditable>401 Unauthorized</pre>
-						<pre><code data-trim contenteditable>403 Forbidden </pre>
-						<pre><code data-trim contenteditable>404 Not Found</pre>
-						5xx: Server Error <br><pre><code data-trim contenteditable>500 Internal Server Error</pre>
-					</section>								
+					<em>(still sobbing)...need to make new friends</em><br>
+					<em>put on brave face...</em><br><br>
+					<p>Here come the questions... </p>
 				</section>
-				
+				<section>
+					<p>question 1</p><h2>Why REST?</h2>
+				</section>
+				<section>
+					<p>question 2</p><h2>Why REST for APIs?</h2>
+				</section>
+				<section>
+					<p>question 3</p><h2>Heard about SuperNova @ ING?</h2>
+				</section>
+				<section>
+					<p>Thank you</p>
+					<em>...graceful bow</em>
+				</section>
+								
 
 			<script src="lib/js/head.min.js"></script>
             <script src="js/reveal.min.js"></script>
