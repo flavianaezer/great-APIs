@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>APIs - purpose and need</title>
+
+		<meta name="description" content="A presentation to explain the purpose and need of APIs">
+		<meta name="author" content="Flavia Sequeira">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+		
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style type="text/css">
+                      .ING {
+                color: #ff6600;
+        }
+    </style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">				
+				<section>
+					<h1><scan class="ING">APIs</scan></h1>
+					<h3>purpose and need</h3>
+					<p>
+						<small>Created by Flavia Sequeira, Dev Engineer, ING Netherlands (<a href="http://twitter.com/flaviavanharten">@flaviavanharten</a>)</small><br>
+						<img src="./images/ing-logo.gif" alt="missing-ing-logo">
+					</p>
+				</section>
+				
+				<section>
+					<img width="600" height="450" src="./images/web-yester.PNG" alt="missing-web-yester">					
+				</section>
+				
+				<section>
+					<img width="600" height="450" src="./images/web-now.PNG" alt="missing-web-now">					
+				</section>
+				
+				<section>
+					<img width="600" height="450" src="./images/web-tomorrow.PNG" alt="missing-web-tomorrow">					
+				</section>
+				
+				<section>
+					<h2 class="fragment content-visible"><scan class="ING">The Web it is a-Changin'</scan></h2>
+					<p class="fragment content-visible">So our way of building web applications should change as well!</p>
+				</section>
+
+				<section>
+					<h2><scan class="ING">our current way of building web applications</scan></h2>
+					<em>#TODO - insert current application landscape</em>
+					<p class="fragment content-visible">does not scale</p>
+					<p class="fragment content-visible">redudance</p>
+					<p class="fragment content-visible">maintainence nightmare</p>
+				</section>
+
+				<section>
+					<h2><scan class="ING">APIs to the rescue</scan></h2>
+					<img width="350" height="450" src="./images/superman-rescue.jpg" alt="missing-superman-rescue">
+				</section>
+
+				<section>
+					<h2><scan class="ING">API based architecture</scan></h2>
+					<em>#TODO - insert archi diagram</em>
+				</section>
+
+				<section>
+					<h2><scan class="ING">a great API</scan></h2>
+					<p class="fragment content-visible">knows it's audience</p>
+					<p class="fragment content-visible">is designed</p>
+					<p class="fragment content-visible">is outside-in</p>
+				</section>
+
+				<section>
+					<h2><scan class="ING">REST for buiding great APIs</scan></h2>
+					<a href="./rest-style.html">go</a>
+				</section>
+
+				<section>
+					<p>Thank you</p>
+					<em>...graceful bow</em>
+					<br><br><br><br><br><br>
+					Contact <br>	
+					<a href="mailto:flavia.sequeira@ing.nl">flavia.sequeira@ing.nl</a><br><br>
+					<em>We're hiring!</em><br>
+					<img src="./images/ing-logo.gif" alt="missing-ing-logo">
+					
+				</section>
+								
+
+			<script src="lib/js/head.min.js"></script>
+            <script src="js/reveal.min.js"></script>
+			<script>
+					// Full list of configuration options available here:
+					// https://github.com/hakimel/reveal.js#configuration
+					Reveal.initialize({
+							controls: true,
+							progress: true,
+							history: true,
+							center: true,
+
+							theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+							transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+							// Parallax scrolling
+							// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+							// parallaxBackgroundSize: '2100px 900px',
+
+							// Optional libraries used to extend on reveal.js
+							dependencies: [
+									{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+									{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+									{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+									{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+									{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+									{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+							]
+					});
+			</script>
+	</body>
+</html>
