@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>The API Developer Experience</title>
+
+		<meta name="description" content="A talk on how to make a great API Developer Experience happen.">
+		<meta name="author" content="Flavia Sequeira">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->		
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+		
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<style type="text/css">
+            .ING {
+                color: #ff6600;
+			}
+			.red { 
+				color: #ff0000;
+			}
+			.black { 
+				color: #000000;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+						
+				<section>
+					<h1>The API<br><span class="ING">Developer</span><br>Experience</h1>		
+					<h3>3 myths, 3 suggestions, 3 facts</h3>
+					<p>
+						<small>Created by Flavia Sequeira (<a href="http://twitter.com/flaviavanharten">@flaviavanharten</a>)<br>Dev Engineer, ING Netherlands</small><br>
+						<img src="./images/ing-logo.gif" alt="missing-ing-logo">
+					</p>
+				</section>
+				
+				<section>
+					<h1>API Value Chain</h1>
+					<img src="./images/api-value-chain.jpg" alt="missing-api-value-chain">
+				</section>
+				
+				<section data-background="./images/myth-img.jpg">
+					<h1><span class="black">myths</span></h1>
+				</section>
+				
+				<section data-transition="linear" data-background-transition="slide" data-background="#00FFFF">
+					<h3><span class="ING">myth 1</span></h3>
+					<h2><span class="black">We'll think about the developer experience later. It's only for public APIs anyway</span></h2>	
+				</section>
+				
+				<section data-background="./images/wrap.jpg">
+				</section>
+				
+
+				<section data-transition="linear" data-background-transition="slide" data-background="#00FFFF">
+					<h3><span class="ING">myth 2</span></h3>
+					<h2><span class="black">Developers are bound to love our API. I mean, why wouldn't they? What's not to like?</span></h2>	
+				</section>
+				
+				<section data-background="./images/busy-developer.jpg" data-background-size="600px">	
+				</section>
+				
+				<section data-background="./images/apps-everywhere.jpg">
+				</section>
+				
+				<section data-transition="linear" data-background-transition="slide" data-background="#00FFFF">
+					<h3><span class="ING">myth 3</span></h3>
+					<h2><span class="black">We know what's best for our API. We don't need developers telling us what to do.</span></h2>
+				</section>
+				
+				<section data-transition="linear" data-background-transition="slide" data-background="./images/not-listening.jpg" data-background-size="800px">
+				</section>
+				
+				<section data-background="./images/not-interested.jpg">
+				</section>
+				
+				<section data-background="./images/suggestion-img.jpg" data-background-size="1200px">
+					<h1><span class="ING">suggestions</span></h1>
+				</section>
+				
+				<section data-transition="linear" data-background-transition="slide" data-background="#ff6600">
+					<h3>suggestion 1</h3>
+					<h1>Treat your API as a Product</h1>
+				</section>
+				
+				<section>
+					<em><span class="ING">Treat your API as a Product</span></em><br><br>
+					<h3 class="fragment">Give it a URL; make it discoverable</h3>
+					<h3 class="fragment">Clear TOS</h3>
+					<h3 class="fragment">Easy Sign Up</h3>					
+				</section>
+				
+				<section>
+					<em><span class="ING">Treat your API as a Product</span></em><br><br>
+					<h3 class="fragment">Thorough Documentation</h3>
+					<h3 class="fragment">SDKs</h3>
+					<h3 class="fragment">Hello World sample apps</h3>					
+				</section>
+				
+				<section>
+					<em><span class="ING">Treat your API as a Product</span></em><br><br>
+					<h3 class="fragment">Release announcements and notes</h3>
+					<h3 class="fragment">Sandbox environments</h3>
+					<h3 class="fragment">Honor Feedback, provide Support</h3>
+				</section>
+				
+				<section data-transition="linear" data-background-transition="slide" data-background="#ff6600">
+					<h3>suggestion 2</h3>
+					<h1>Ensure ease of use</h1>
+				</section>
+				
+				<section>
+					<em><span class="ING">Ensure ease of use</span></em><br><br>
+					<h3 class="fragment">REST is best; <br>don't make up your own conventions</h3>
+					<h3 class="fragment">Stick to JSON for representing data</h3>
+					<h3 class="fragment">Use HTTP; <br>and all of it (status codes, verbs, all)</h3>								
+				</section>
+				
+				<section>
+					<em><span class="ING">Ensure ease of use</span></em><br><br>
+					<h3 class="fragment">Use Hypermedia to enhance navigability</h3>
+					<h3 class="fragment">Use OAuth2 for authentication</h3>
+					<h3 class="fragment">Provide curl Scripts</h3>								
+				</section>
+				
+				<section>
+					<em><span class="ING">Ensure ease of use</span></em><br><br>
+					<h3 class="fragment">Think about mobile clients, screen less clients</h3>
+					<h3 class="fragment">Never break clients; no breaking changes</h3>	
+					<h3 class="fragment">API knows its audience; <br>don't expose internal jargon</h3>
+										
+				</section>
+				
+				<section data-transition="linear" data-background-transition="slide" data-background="#ff6600">
+					<h3>suggestion 3</h3>
+					<h1>Welcome <br>Innovation</h1>
+				</section>
+				
+				<section>
+					<em><span class="ING">Welcome Innovation</span></em><br><br>
+					<h3 class="fragment">Developers are not stupid; <br>get to know them</h3>
+					<h3 class="fragment">Invite feedback; <br>use it as a boost to enhance your API</h3>
+					<h3 class="fragment">Organise Hackathons; <br><span class="ING">together</span> special things happen</h3>					
+				</section>
+				
+				<section data-background="./images/example-1.jpg" data-background-size="1000px">
+				</section>
+				
+				<section data-background="./images/example-2.jpg" data-background-size="1000px">
+				</section>
+				
+				<section data-background="./images/example-3.jpg" data-background-size="1000px">
+				</section>	
+				
+				<section data-background="./images/facts-img.jpg">
+					<h1><span class="ING">facts</span></h1>
+				</section>
+				
+				<section data-transition="linear" data-background-transition="slide" data-background="#912CEE">
+					<h3><span class="black">fact 1</span></h3>
+					<h1>an API is only as valuable as the Apps built with it;</h2>
+				</section>
+				
+				<section data-transition="linear" data-background-transition="slide" data-background="#EE00EE">
+					<h3><span class="black">fact 2</span></h3>
+					<h1>which makes the API Developer Experience <br>crucial</h1>
+				</section>
+				
+				<section data-transition="linear" data-background-transition="slide" data-background="#FF00CC">
+					<h3><span class="black">fact 3</span></h3>
+					<h2>and like any experience, the </span></h2><h1>API Developer Experience</h1><h2> must be </h2><h1>Designed.</h1>
+				</section>
+				
+				<section data-background="./images/design-quote-steve-jobs.jpg">
+				</section>
+				
+				<section data-background="#ffff00">					
+					<h1><span class="red">Design</span><h1>
+					<h1 class="fragment"><span class="red">like you give a damn</span><h1>
+				</section>
+				
+				<section>
+					<h1>Thank you</h1>
+					<br><br>
+					Contact <br>	
+					<a href="mailto:flavia.sequeira@ing.nl">flavia.sequeira@ing.nl</a><br><br>	
+					<em>We're hiring!</em><br>
+					<img src="./images/ing-logo.gif" alt="missing-ing-logo">
+					
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Flil list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'defalit', // defalit/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
