@@ -1,6 +1,7 @@
 great-APIs
 ==========
 
+This is an old reepository that I don't use anymore. Therefore archiving it. 
 This repository is a placeholder for everything that takes to build great APIs. By everything I mean everything. I envision it to have varied content as it progresses through time - code, presentations, etc. 
 
 version 1.0
